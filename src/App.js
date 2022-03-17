@@ -73,7 +73,7 @@ export default function App() {
   }else if(selected === 4){
     subCard = <SubCard 
     header={`Congratulations,${userData.displayName}!`}
-    para="You have completed onboarding, you can start using the Eden!"
+    para="You have completed onboarding, you can start using the CutShort!"
   >
     <form className='form'>                      
       <button onClick={e=>{handleLaunch(e)}}>Launch Eden</button>
