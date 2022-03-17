@@ -76,7 +76,7 @@ export default function App() {
     para="You have completed onboarding, you can start using the CutShort!"
   >
     <form className='form'>                      
-      <button onClick={e=>{handleLaunch(e)}}>Launch Eden</button>
+      <button onClick={e=>{handleLaunch(e)}}>Launch Cutshort</button>
     </form>
   </SubCard>
   }
