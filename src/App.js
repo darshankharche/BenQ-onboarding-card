@@ -56,12 +56,12 @@ export default function App() {
         >
           <form className='form'>
             <div className="team-cards">
-              <div onClick={()=>handleTeamCard('user')} id='team-card-user' className='team-type'>
+              <div onClick={()=>handleTeamCard('user')} id='team-card-user' className={`team-type ${userData.usingFor === 'self' && 'selected'}`}>
                 <i className="fa-solid fa-user"></i>
                 <h3>For Myself</h3>
                 <p>Write better. Think more clearly. Stay organized.</p>
               </div>
-              <div onClick={()=>handleTeamCard('users')} id='team-card-users' className='team-type'>
+              <div onClick={()=>handleTeamCard('users')} id='team-card-users' className={`team-type ${userData.usingFor === 'team' && 'selected'}`}>
                 <i className="fa-solid fa-users"></i>
                 <h3>With my team</h3>
                 <p>Wikis, docs, tasks & projects, all in one place.</p>
