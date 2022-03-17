@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
+
 
 .App{
   display: flex;
@@ -83,6 +85,7 @@
   justify-content: space-between;
   max-width: 500px;
   margin: 0 auto;
+  padding-bottom: 3em;
 }
 
 .toggler>*{
