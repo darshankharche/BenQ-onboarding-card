@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+}
+
+
+.onboarding-card{
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.onboarding-card .sub-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.onboarding-card .sub-card h1{
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+.onboarding-card .sub-card p{
+  color:rgb(58, 58, 58);
+  margin-top:0;
+}
+
+.sub-card .form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.sub-card .form input{
+  width: 100%;
+  border:1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  padding: .75em 1em;
+  margin-top: .5em;
+}
+
+.sub-card .form label{
+  text-align: left;
+  font-size: 0.75em;
+}
+
+.sub-card .form button{
+  border:none;
+  border-radius: 5px;  
+  padding: .75em 1em;
+  color: white;
+  background-color: rgb(129, 42, 228);
+  margin-top: 1em;
+}
+
+.toggler{
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.toggler>*{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border :1px solid rgb(129, 42, 228);
+  /* background-color : rgb(129, 42, 228); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.toggler span{
+  background: transparent;
+
+}
+
+.toggler-left::after, .toggler-mid::after{
+  position: absolute;
+  content:"";
+  z-index: 2;
+  top: 50%;
+  left: 100%;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(151, 151, 151);
+}
+
+
+.toggler-right::before, .toggler-mid::before{
+  position: absolute;
+  content:"";
+  z-index: 2;
+  top: 50%;
+  right: 100%;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(151, 151, 151);
+}
+
+
+.form .team-cards{
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+
+}
+
+.team-type{
+  width: 45%;
+  border: 2px solid grey;
+  padding: 1em;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.team-type:hover,.team-type:focus{
+  border: 4px solid rgb(159, 97, 230);
+} 
+
+.selected{
+  border: 4px solid rgb(129, 42, 228);
+}
+
+
+.toggler-selected,
+.toggler-selected::after,
+.toggler-selected::before{
+  background-color: rgb(129, 42, 228);
+  color: white;
+}
