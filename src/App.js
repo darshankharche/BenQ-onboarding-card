@@ -76,7 +76,7 @@ export default function App() {
     para="You have completed onboarding, you can start using the Eden!"
   >
     <form className='form'>                      
-      <button>Launch Eden</button>
+      <button onClick={e=>{handleLaunch(e)}}>Launch Eden</button>
     </form>
   </SubCard>
   }
@@ -163,11 +163,18 @@ export default function App() {
     })
   }
   console.log(isDataFilled)
+
+  function handleLaunch(e){
+    e.preventDefault()
+  }
+
+
   return (
     <div className="App">
       <div className='onboarding-card'>
         <div className='logo'>
-          Logo
+          <img src='./images/cutshort-logo.png' alt='./images/cutshort-logo.png' />
+          <h1>CutShort</h1>
         </div>
         <Toggler handleToggler={handleToggler} />
         {subCard}

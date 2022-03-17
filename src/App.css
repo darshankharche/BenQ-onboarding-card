@@ -2,11 +2,32 @@
   box-sizing: border-box;
 }
 
+.App{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
 
 .onboarding-card{
   max-width: 650px;
   margin: 0 auto;
   padding: 1em;
+  margin-top: 3em;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.logo img{
+  max-height: 50px;
+}
+
+.logo h1{
+  color: rgb(88,81,211);
 }
 
 .onboarding-card .sub-card{
@@ -53,7 +74,7 @@
   border-radius: 5px;  
   padding: .75em 1em;
   color: white;
-  background-color: rgb(129, 42, 228);
+  background-color: rgb(88,81,211);
   margin-top: 1em;
 }
 
@@ -68,7 +89,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border :1px solid rgb(129, 42, 228);
+  border :1px solid rgb(88,81,211);
   /* background-color : rgb(129, 42, 228); */
   display: flex;
   justify-content: center;
@@ -122,17 +143,17 @@
 }
 
 .team-type:hover,.team-type:focus{
-  border: 4px solid rgb(159, 97, 230);
+  border: 4px solid rgb(179, 131, 233)
 } 
 
 .selected{
-  border: 4px solid rgb(129, 42, 228);
+  border: 4px solid rgb(88,81,211);
 }
 
 
 .toggler-selected,
 .toggler-selected::after,
 .toggler-selected::before{
-  background-color: rgb(129, 42, 228);
+  background-color: rgb(88,81,211);
   color: white;
 }
