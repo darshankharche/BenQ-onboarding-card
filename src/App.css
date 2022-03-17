@@ -6,6 +6,7 @@
 .onboarding-card{
   max-width: 650px;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .onboarding-card .sub-card{
@@ -13,7 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  padding: 1em;
+  
 }
 
 .onboarding-card .sub-card h1{
