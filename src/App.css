@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  padding: 1em;
 }
 
 .onboarding-card .sub-card h1{
